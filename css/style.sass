@@ -1,0 +1,141 @@
+
+
+@use 'base'
+
+
+
+@mixin themes($color:green,$s:23px)
+    color: $color
+    font-size: $s
+    
+
+
+
+$background:rgb(60, 55, 117)
+$size:2rem
+$white:white
+$danger:red
+$font-weights: ("light":200,"regular": 400, "medium": 500, "bold": 700)
+
+
+
+ 
+body
+    background : $background
+    font-size: $size
+    color: $white
+
+ 
+
+
+@function weight($k)
+    
+    @return map-get($font-weights, $k)
+    
+
+
+
+
+
+nav
+    ul
+        li
+            color: $danger
+    p
+        color: base.$brown
+
+
+.success
+    @include themes
+
+.alert
+    @include themes($color: red,$s:23px )
+    
+.primary
+     @include themes($color: blue,$s: 23px)
+ 
+
+h3
+    font-weight: map-get($font-weights, bolder)
+
+
+
+
+.main
+    background: white
+    font-weight: weight(bold)
+    &_p
+        color: red 
+        &:hover
+            color: pink        
+
+
+
+
+
+%hello1
+    color: purple
+
+
+
+.hello2
+    @extend %hello1
+    font-weight: bolder
+
+
+$light:false
+$rounded:false
+
+.control
+    @if $light == true 
+        background: white
+        color: black
+    @else 
+        background: black
+        color: white
+        border-radius: if($rounded,34px,null)
+
+
+$message:"hello"
+
+.#{$message}
+    background: gray
+    
+      
+
+@for $i from 1 through 10
+     .class-#{$i}
+        content: "khra"
+    
+
+$classes: "one" 2px , "two" 4px , "three" 34px
+
+
+@each $class , $size in $classes
+    #{$class}
+        border-radius: $size
+     
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

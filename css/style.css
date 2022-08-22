@@ -1,0 +1,107 @@
+body {
+  background: rgb(60, 55, 117);
+  font-size: 2rem;
+  color: white;
+}
+
+nav ul li {
+  color: red;
+}
+nav p {
+  color: orange;
+}
+
+.success {
+  color: green;
+  font-size: 23px;
+}
+
+.alert {
+  color: red;
+  font-size: 23px;
+}
+
+.primary {
+  color: blue;
+  font-size: 23px;
+}
+
+.main {
+  background: white;
+  font-weight: 700;
+}
+.main_p {
+  color: red;
+}
+.main_p:hover {
+  color: pink;
+}
+
+.hello2 {
+  color: purple;
+}
+
+.hello2 {
+  font-weight: bolder;
+}
+
+.control {
+  background: black;
+  color: white;
+}
+
+.hello {
+  background: gray;
+}
+
+.class-1 {
+  content: "khra";
+}
+
+.class-2 {
+  content: "khra";
+}
+
+.class-3 {
+  content: "khra";
+}
+
+.class-4 {
+  content: "khra";
+}
+
+.class-5 {
+  content: "khra";
+}
+
+.class-6 {
+  content: "khra";
+}
+
+.class-7 {
+  content: "khra";
+}
+
+.class-8 {
+  content: "khra";
+}
+
+.class-9 {
+  content: "khra";
+}
+
+.class-10 {
+  content: "khra";
+}
+
+one {
+  border-radius: 2px;
+}
+
+two {
+  border-radius: 4px;
+}
+
+three {
+  border-radius: 34px;
+}
